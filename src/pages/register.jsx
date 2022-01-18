@@ -25,7 +25,7 @@ const RegisterSchema = Yup.object().shape({
 const Register = () => {
     const initialValues = {
         nama_user: "",
-        nomor_telp: "",
+        nomor_telp: '',
         email: "",
         role: '',
         status: 1,
@@ -162,7 +162,7 @@ const Register = () => {
                                             placeholder='Enter your Password Confirmation'
                                             borderColor='#2EBF91'
                                             id='password_confirmation'
-                                            type='passwordConfirmation'
+                                            type='password'
                                             value={values.password_confirmation}
                                             onChange={handleChange}
                                             disabled={isSubmitting}
