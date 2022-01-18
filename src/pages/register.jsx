@@ -25,9 +25,9 @@ const RegisterSchema = Yup.object().shape({
 const Register = () => {
     const initialValues = {
         nama_user: "",
-        nomor_telp: '',
+        nomor_telp: "",
         email: "",
-        role: '',
+        role: "",
         status: 1,
         password: "",
         password_confirmation: "",
@@ -182,6 +182,7 @@ const Register = () => {
                                             color="white"
                                             loading={isSubmitting}
                                             type='submit'
+                                            onSubmit={handleSubmit}
                                         >
                                             <span className="font-semibold text-xl">Register</span>
                                         </Button>
